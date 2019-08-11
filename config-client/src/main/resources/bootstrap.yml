@@ -1,0 +1,21 @@
+#需要读取的配置文件名要和application的名字一致或者是配置文件名的前缀
+spring:
+  application:
+    name: didispace
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: config-server
+      profile: dev
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/
+#  cloud:
+#    config:
+#      uri: http://localhost:1201/
+#      profile: default
+#      label: master
+server:
+  port: 2001

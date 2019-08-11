@@ -1,0 +1,11 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: swagger-service-a
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/
+swagger:
+  base-package: com.bojue.swagger.service.a

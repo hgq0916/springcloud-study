@@ -1,0 +1,24 @@
+spring:
+   application:
+     name: config-server
+   cloud:
+     config:
+       server:
+         git:
+           uri: https://gitee.com/yuanmazhixia/springcloud
+           username: 1286908118@qq.com
+           password: hgq135869
+           search-paths: springcloudConfig
+server:
+  port: 1201
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1001/eureka/
+encrypt:
+  key-store:
+    location: classpath:config-server.keystore
+    alias: config-server
+    password: 111111
+    secret: 222222
+#  key: didispace
